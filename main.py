@@ -33,7 +33,14 @@ headers = {
     }
 
 options = webdriver.ChromeOptions()
-options.add_argument("--headless=new")
+
+web_driver_options.add_argument('headless')
+web_driver_options.add_argument('--no-sandbox')
+web_driver_options.add_argument('--disable-dev-shm-usage')
+web_driver_options.add_argument("--disable-gpu")
+web_driver_options.add_argument("--window-size=1920,1200")
+web_driver_options.add_argument("--ignore-certificate-errors")
+web_driver_options.add_argument("--disable-extensions")
 
 
 
